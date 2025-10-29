@@ -1,0 +1,15 @@
+services: 
+  plex:
+    image: plexinc/pms-docker:latest
+    restart: always
+    container_name: plex
+    network_mode: host
+    environment:
+      TZ: Europe/Oslo
+    env_file:
+      - .env
+    volumes:
+      - "./config:/config"
+      - "/mnt/storage/tvseries:/tvseries"
+      - "/mnt/storage/movies:/movies"
+      - "/mnt/storage/music:/music"
