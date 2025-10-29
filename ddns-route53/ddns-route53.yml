@@ -1,0 +1,20 @@
+route53:
+  recordsSet:
+    - name: "home.egge.cloud."
+      type: "A"
+      ttl: 300
+    - name: "home.egge.cloud."
+      type: "AAAA"
+      ttl: 300
+    - name: "photos.egge.cloud."
+      type: "A"
+      ttl: 300
+    - name: "photos.egge.cloud."
+      type: "AAAA"
+      ttl: 300
+    - name: "obsidian.egge.cloud."
+      type: "A"
+      ttl: 300
+    - name: "obsidian.egge.cloud."
+      type: "AAAA"
+      ttl: 300
