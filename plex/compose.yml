@@ -4,6 +4,13 @@ services:
     restart: always
     container_name: plex
     network_mode: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["1"]
+              capabilities: [gpu]
     environment:
       TZ: Europe/Oslo
     env_file:
